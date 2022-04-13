@@ -19,11 +19,11 @@ Slides are [here](slides.pdf)
 
 ## Build multiarch images
 
-Review the simple instructions in `Dockerfile`. We're just building a ubuntu image that prints the contents of `test.txt`.
+Review the simple instructions in `Dockerfile`. We're just building a ubuntu image that prints the contents of [`test.txt`](test.txt).
 
 ### "standard" Docker build
 
-Make sure to replace `scottaubrey` with your own dockerhub repo.
+Make sure to replace `scottaubrey` with your own dockerhub username.
 
 ```shell
 docker build . -t scottaubrey/test-multiarch-image:standard-build
