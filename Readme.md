@@ -42,6 +42,6 @@ docker push scottaubrey/test-multiarch-image:buildx-single-arch
 ### multi-arch Docker buildx
 
 ```shell
-docker buildx build . -t scottaubrey/test-multiarch-image:buildx-multi-arch --push
+docker buildx build . -t scottaubrey/test-multiarch-image:buildx-multi-arch --platform linux/amd64,linux/arm64 --push
 docker run scottaubrey/test-multiarch-image:buildx-multi-arch
 ```
